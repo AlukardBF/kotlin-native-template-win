@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceFolder}/build/bin/native/releaseExecutable/kotlin-native.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "sourceLanguages": []
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/build/bin/native/debugExecutable/kotlin-native.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": true,
+            "sourceLanguages": [],
+            "preRunCommands": [
+                "command script import C:\\Users\\alukard\\.konan\\kotlin-native-prebuilt-windows-1.4\\tools\\konan_lldb.py"
+            ]
+        }
+    ]
+  }
